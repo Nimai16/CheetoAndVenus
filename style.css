@@ -1,0 +1,109 @@
+html {
+    background-color: antiquewhite;
+  }
+
+  h1 {
+    color:whitesmoke;
+    background-color: darkseagreen;
+    font-style: italic;
+  }
+
+  h2 {
+    color:#FAF8F1 ;
+    background-color:#C58940 ;
+    font-style: italic;
+  }
+
+  .image-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+  .image-container img {
+    width: 200px; /* Adjust dimensions as needed */
+
+  }
+
+  .preview-image {
+    display: none; /* Hide the preview image initially */
+    position: absolute; /* Position it relative to the container */
+    top: 0;
+    left: 0;
+    opacity: 0; /* Make it fully transparent */
+    transition: opacity 0.3s ease-in-out; /* Add a smooth transition for opacity */
+}
+
+ .image-container:hover .preview-image {
+   display: block; /* Show the preview image on hover */
+   opacity: 1; /* Make it fully opaque */
+}
+
+ .image-container:hover .preview-image {
+   transform: scale(2.2); /* Zoom in slightly */
+}
+
+ .preview-image {
+   border: 2px solid #fff; /* White border on hover */
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow */
+}
+
+html {
+text-align: center;
+}
+
+
+
+
+
+
+
+/* <!-- **Here's a detailed explanation of the CSS code you provided:**
+
+**General Background:**
+
+- **`html { background-color: antiquewhite; }`:** Sets the background color of the entire HTML page to a light beige color named "antiquewhite."
+
+**Heading Styles:**
+
+- **`h1 { ... }`:** 
+    - Makes the text of `<h1>` headings whitesmoke (a very light gray) with a darkseagreen background.
+    - Styles the text as italic.
+- **`h2 { ... }`:** 
+    - Makes the text of `<h2>` headings a light beige color with a brownish-orange background.
+    - Styles the text as italic.
+
+**Image Container and Hover Effects:**
+
+- **`.image-container { ... }`:** 
+    - Positions an element with this class absolutely, meaning it's positioned relative to its nearest positioned ancestor (not the viewport).
+    - Places it at the center of the page both horizontally and vertically using `top: 50%; left: 50%; transform: translate(-50%, -50%);`.
+- **`.image-container img { ... }`:** 
+    - Sets the width of images within this container to 200 pixels.
+- **`.preview-image { ... }`:** 
+    - Initially hides images with this class.
+    - Positions them absolutely within their parent container.
+    - Makes them fully transparent.
+    - Adds a smooth transition effect for opacity changes.
+- **`.image-container:hover .preview-image { ... }`:** 
+    - Reveals the preview image when hovering over the container.
+    - Makes the preview image fully opaque.
+    - Zooms in the preview image slightly on hover.
+    - Adds a white border and a subtle shadow to the preview image on hover.
+
+**Vertical and Horizontal Alignment:**
+
+- **`html { align-items: center; align-content: center; text-align: center; }`:** 
+    - Vertically aligns all elements within the page to the center.
+    - Horizontally aligns content within the page to the center.
+    - Centers text within elements.
+
+**Overall, this CSS code:**
+
+- Sets a light beige background for the page.
+- Styles `h1` and `h2` headings with specific colors, backgrounds, and italic text.
+- Creates a container for images that positions them at the center of the page.
+- Implements a hover effect to reveal a preview image when hovering over the container, with a smooth transition, zoom effect, and visual enhancements.
+- Ensures vertical and horizontal alignment of content within the page. --> */
